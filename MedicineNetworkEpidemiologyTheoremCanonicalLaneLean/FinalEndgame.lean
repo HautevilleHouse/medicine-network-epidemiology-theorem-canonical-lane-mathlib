@@ -1,0 +1,12 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.MedicineNetworkEpidemiologyTheoremCanonicalLaneLean.FinalTheorem
+
+namespace HautevilleHouse
+namespace MedicineNetworkEpidemiologyTheoremCanonicalLaneLean
+
+theorem medicine_network_epidemiology_endgame_consolidated (A : AdmissibleClass) :
+    ConstrainedMedicineNetworkEpidemiologyClosure A := by
+  exact constrained_medicine_network_epidemiology_endgame A
+
+end MedicineNetworkEpidemiologyTheoremCanonicalLaneLean
+end HautevilleHouse

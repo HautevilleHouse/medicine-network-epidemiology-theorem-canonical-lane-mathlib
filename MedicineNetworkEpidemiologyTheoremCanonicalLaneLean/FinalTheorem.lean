@@ -1,0 +1,15 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.MedicineNetworkEpidemiologyTheoremCanonicalLaneLean.NetworkEpidemiologyModels
+import HautevilleHouse.MedicineNetworkEpidemiologyTheoremCanonicalLaneLean.NetworksCompartmental
+
+namespace HautevilleHouse
+namespace MedicineNetworkEpidemiologyTheoremCanonicalLaneLean
+
+def ConstrainedMedicineNetworkEpidemiologyClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_medicine_network_epidemiology_endgame (A : AdmissibleClass) : ConstrainedMedicineNetworkEpidemiologyClosure A :=
+  And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end MedicineNetworkEpidemiologyTheoremCanonicalLaneLean
+end HautevilleHouse
